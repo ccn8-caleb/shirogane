@@ -421,7 +421,7 @@ const AchievementProgress = () => {
       {/* Category Tabs */}
       <div className='px-6 py-6'>
         <div className='max-w-6xl mx-auto'>
-          <div className='flex flex-wrap gap-2 mb-8 justify-center'>
+          <div className='flex flex-wrap gap-4 mb-8 justify-center'>
             {categories.map((category, index) => {
               const stats = getCategoryStats(category.id);
               const CategoryIcon = category.icon;
