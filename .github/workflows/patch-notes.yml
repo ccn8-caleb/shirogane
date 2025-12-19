@@ -91,15 +91,15 @@ jobs:
                 description: description.trim(),
                 color: embedColor,
                 timestamp: new Date().toISOString(),
-                footer: { text: `かな道場 • ${latest.date}`, icon_url: 'https://kanadojo.com/kanadojo.png' },
-                author: { name: 'KanaDojo Release', url: 'https://kanadojo.com', icon_url: 'https://kanadojo.com/kanadojo.png' }
+                footer: { text: `かな道場 • ${latest.date}`, icon_url: 'https://raw.githubusercontent.com/lingdojo/kana-dojo/main/public/kanadojo.png' },
+                author: { name: 'KanaDojo Release', url: 'https://kanadojo.com', icon_url: 'https://raw.githubusercontent.com/lingdojo/kana-dojo/main/public/kanadojo.png' }
               };
 
               const payload = {
-                content: `🎊 **New update available!** KanaDojo ${latest.version} is now live.`,
+                content: `🎊 @everyone **New update available!** KanaDojo ${latest.version} is now live.`,
                 embeds: [embed],
                 username: 'KanaDojo',
-                avatar_url: 'https://kanadojo.com/kanadojo.png'
+                avatar_url: 'https://raw.githubusercontent.com/lingdojo/kana-dojo/main/public/kanadojo.png'
               };
 
               const webhookUrl = new URL(process.env.WEBHOOK_URL);
