@@ -546,7 +546,7 @@
     "english": "Are you ready?",
     "game": "Kingdom Hearts",
     "character": "Sora",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
